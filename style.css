@@ -3,7 +3,7 @@ body{
         rgb(59, 88, 93),  
         rgb(29, 40, 42)
         );
-    height: 97.75vh;
+    height: fit-content;
     color:white;
     font-family: sans-serif;
     display: flex;
@@ -82,7 +82,7 @@ button{
     height: inherit;
     width: var(--progress);
     border-radius: inherit;
-    transition: width 0.5s;
+    transition: width 0.4s;
 }
 
 #progress-container {
