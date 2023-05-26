@@ -96,15 +96,22 @@ function pauseSong(){
 };
 
 function likeButtonRender(){
+    // Código de antes
+    // if(sortedPlaylist[index].liked == true){
+    //     likeButton.querySelector('.bi').classList.remove('bi-heart');
+    //     likeButton.querySelector('.bi').classList.add('bi-heart-fill');
+    //     likeButton.classList.add('button-active')
+    // } else {
+    //     likeButton.querySelector('.bi').classList.add('bi-heart');
+    //     likeButton.querySelector('.bi').classList.remove('bi-heart-fill');
+    //     likeButton.classList.remove('button-active')
+    // }
     if(sortedPlaylist[index].liked == true){
-        likeButton.querySelector('.bi').classList.remove('bi-heart');
-        likeButton.querySelector('.bi').classList.add('bi-heart-fill');
         likeButton.classList.add('button-active')
     } else {
-        likeButton.querySelector('.bi').classList.add('bi-heart');
-        likeButton.querySelector('.bi').classList.remove('bi-heart-fill');
         likeButton.classList.remove('button-active')
     }
+
 };
 
 function initializeSong(){

@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Spãotify</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="music-container">
-        <h4 id="playlist-title">Playlist Spãotify</h4>
-        <img alt="Disc Cover" id="cover">
-        <audio id="audio"></audio>
-        <div id="bellow-cover">
-            <div id="song-info">
-                <div id="song-name">Nome da musica</div>
-                <div id="band-name" class="light-color">nome da banda</div>
-            </div>
-            <button id="like" class="button light-color"><i class="bi bi-heart"></i></button>
+      <h4 id="playlist-title">Playlist Spãotify</h4>
+      <img alt="Disc Cover" id="cover" />
+      <audio id="audio"></audio>
+      <div id="bellow-cover">
+        <div id="song-info">
+          <div id="song-name">Nome da musica</div>
+          <div id="band-name" class="light-color">nome da banda</div>
         </div>
-        <div id="progress-container">
-            <div id="progress-bar">
-                <div id="current-progress"></div>
-                <div id="progress-rounddot"></div>
-            </div>
-            <div id="time-box">
-                <div id="song-time">00:00:00</div>
-                <div id="total-time">00:00:00</div>
-            </div>
+        <button id="like" class="fav-btn button light-color">
+          <i class="bi bi-heart"></i>
+          <i
+            style="position: absolute;"
+            class="bi bi-heart-fill"
+          ></i>
+        </button>
+      </div>
+      <div id="progress-container">
+        <div id="progress-bar">
+          <div id="current-progress"></div>
+          <div id="progress-rounddot"></div>
         </div>
-        <div id="button-container">
-            <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button>
-            <button id="back" class="button button-navigate"><i class="bi bi-skip-start-fill"></i></button>
-            <button id="play" class="button button-biggest"><i class="bi bi-play-circle-fill"></i></button>
-            <button id="skip" class="button button-navigate"><i class="bi bi-skip-end-fill"></i></button>
-            <button id="repeat" class="button"><i class="bi bi-arrow-repeat"></i></button>
+        <div id="time-box">
+          <div id="song-time">00:00:00</div>
+          <div id="total-time">00:00:00</div>
         </div>
+      </div>
+      <div id="button-container">
+        <button id="shuffle" class="button">
+          <i class="bi bi-shuffle"></i>
+        </button>
+        <button id="back" class="button button-navigate">
+          <i class="bi bi-skip-start-fill"></i>
+        </button>
+        <button id="play" class="button button-biggest">
+          <i class="bi bi-play-circle-fill"></i>
+        </button>
+        <button id="skip" class="button button-navigate">
+          <i class="bi bi-skip-end-fill"></i>
+        </button>
+        <button id="repeat" class="button">
+          <i class="bi bi-arrow-repeat"></i>
+        </button>
+      </div>
     </div>
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
