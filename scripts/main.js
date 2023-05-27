@@ -180,9 +180,14 @@ function repeatButtonClicked(){
     if(repeatOn == false){
         repeatOn = true;
         repeatButton.classList.add('button-active');
+        repeatButton.classList.remove('unrotate');
+        repeatButton.classList.add('rotate');
+
     } else {
         repeatOn = false;
         repeatButton.classList.remove('button-active');
+        repeatButton.classList.add('unrotate');
+        repeatButton.classList.remove('rotate');
     }
 };
 

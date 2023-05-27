@@ -119,3 +119,13 @@ button {
 .button-active > i:nth-child(1) {
   color: rgb(0, 183, 107);
 }
+
+.rotate {
+  transform: rotate(180deg); 
+  transition: 1s;
+}
+
+.unrotate {
+    transform: rotate(-180deg); 
+    transition: 1s;
+}
