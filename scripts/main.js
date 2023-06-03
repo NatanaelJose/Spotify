@@ -12,6 +12,7 @@ const repeatButton = document.getElementById('repeat');
 const songTime = document.getElementById('song-time');
 const totalTime = document.getElementById('total-time');
 const likeButton = document.getElementById('like');
+const usrButton = document.getElementById('user-enter');
 
 const requiem = {
     songName: 'Requiem',
@@ -57,6 +58,7 @@ const Nocturne = {
 let isShuffled = false;
 let isPlaying = false;
 let repeatOn = false;
+let usrOn = false;
 const OriginalPlaylist = JSON.parse(localStorage.getItem('playlist')) ?? [requiem, Ballade1, Ballade2, Ballade3, Nocturne, Allegro];
 let sortedPlaylist = [...OriginalPlaylist]; //spread
 let index = 0;
@@ -227,10 +229,21 @@ function likeButtonClicked(){
     );
 }
 
+function usrButtonClicked() {
+    if(usrOn == false){
+        usrButton.classList.add("button-active");
+        usrOn = true;
+    } else {
+        usrButton.classList.remove("button-active");
+        usrOn = false;
+    }
+}
+
 initializeSong();
 play.addEventListener('click', playPauseDecider);
 next.addEventListener('click', nextSong);
 likeButton.addEventListener('click', likeButtonClicked);
+usrButton.addEventListener('click', usrButtonClicked);
 shuffleButton.addEventListener('click', shuffleButtonClicked);
 previous.addEventListener('click', previousSong);
 repeatButton.addEventListener('click', repeatButtonClicked);
