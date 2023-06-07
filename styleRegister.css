@@ -81,7 +81,7 @@ input {
   }
 
 
-#submit-login {
+#submit-register {
     display: flex;
     text-align: center;
     color: #FDFDFD;
@@ -94,14 +94,14 @@ input {
     background-color: rgb(101, 113, 247);
 }
 
-#submit-login:hover {
+#submit-register:hover {
     transition: 1s;
     background-color: rgb(71, 82, 196);
     border-color: rgb(71, 82, 196);;
     cursor: pointer;
 }
 
-#forgot-password {
+#help-password {
     position: relative;
     top: -19px;
     font-size: smaller;

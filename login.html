@@ -16,15 +16,15 @@
         <section>
             <article class="form-control">
                 <label for="name">Nome<span class="req">*</span></label>
-                <input type="text" id="name" name="name" autocomplete="off" placeholder="Digite seu Nome" required/>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Digite seu Nome" required/>
             </article>
             <article class="form-control">
                 <label for="email">E-mail<span class="req">*</span></label>
-                <input type="text" id="email" name="email" autocomplete="off" placeholder="Digite seu E-mail" required/>
+                <input type="text" id="email" name="email" autocomplete="email" placeholder="Digite seu E-mail" required/>
             </article>
             <article class="form-control">
                 <label for="senha">Senha<span class="req">*</span></label>
-                <input type="text" id="senha" name="senha" autocomplete="off" placeholder="Digite sua Senha" required/>
+                <input type="text" id="senha" name="senha" autocomplete="current-password" placeholder="Digite sua Senha" required/>
             </article>
             <a href="#" id="forgot-password">Esqueceu a senha?</a>
             <button type="submit" id="submit-login">Fazer o Login</button>
@@ -33,5 +33,6 @@
             </div>
         </section>
     </div>
+    <script src="scripts/login.js"></script>
 </body>
 </html>
