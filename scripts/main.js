@@ -117,8 +117,8 @@ function likeButtonRender(){
 };
 
 function initializeSong(){
-    cover.src = `images/${sortedPlaylist[index].file}.png`;
-    song.src = `songs/${sortedPlaylist[index].file}.mp3`;
+    cover.src = `/images/${sortedPlaylist[index].file}.png`;
+    song.src = `/songs/${sortedPlaylist[index].file}.mp3`;
     bandName.innerHTML = sortedPlaylist[index].artist;
     songName.innerHTML = sortedPlaylist[index].songName;
     likeButtonRender();
