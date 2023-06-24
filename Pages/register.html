@@ -24,11 +24,11 @@
             </article>
             <article class="form-control">
                 <label for="senha">Senha<span class="req">*</span></label>
-                <input type="text" id="senha" name="senha" autocomplete="off" placeholder="Digite sua Senha" required/>
+                <input type="text" id="senha" name="senha" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Digite sua Senha" required/>
             </article>
             <article class="form-control">
                 <label for="senha">Confirmar Senha<span class="req">*</span></label>
-                <input type="text" id="confirmsenha" name="confirmsenha" autocomplete="off" placeholder="Confirme a sua Senha" required/>
+                <input type="text" id="confirmsenha" name="confirmsenha" autocomplete="off" pattern="[a-z0-5]{8,}" placeholder="Confirme a sua Senha" required/>
             </article>
             <a href="#" id="help-password">Quer ajuda com a senha?</a>
             <button type="submit" id="submit-register">Registrar-se</button>
